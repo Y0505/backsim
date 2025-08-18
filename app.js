@@ -1,3 +1,12 @@
+// --------------------------------------------
+// This is a simple user management API.
+// **Important Notice:**  
+// All user data in this code is **fake and for demonstration only**.
+// Please NEVER use real, sensitive, or personal information in this project or on this server.
+// This code is intended for practice, learning, and testing purposes only.
+// https://github.com/Y0505/backsim
+// --------------------------------------------
+
 const express = require('express');
 const app = express();
 const PORT = process.env.PORT || 4000;
@@ -7,7 +16,7 @@ app.use(express.json());
 // In-memory fake user data
 let users = [
   { id: 13577405, name: "Yaser", email: "Yaser@example.com" },
-  { id: 17008506, name: "Bob", email: "bob@example.com" },
+  { id: 17008506, name: "bot", email: "bot@example.com" },
 ];
 
 // Simple middleware to simulate random server errors
