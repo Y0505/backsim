@@ -1,6 +1,20 @@
+// --------------------------------------------
+// This is a simple user management API.
+// **Important Notice:**  
+// All user data in this code is **fake and for demonstration only**.
+// Please NEVER use real, sensitive, or personal information in this project or on this server.
+// This code is intended for practice, learning, and testing purposes only.
+// https://github.com/Y0505/backsim
+// --------------------------------------------
+
 const express = require('express');
+const cors = require('cors');
 const app = express();
 const PORT = process.env.PORT || 4000;
+
+app.use(cors({
+  origin: 'http://localhost:3000'
+}));
 
 app.use(express.json());
 
