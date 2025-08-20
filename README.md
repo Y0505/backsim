@@ -15,7 +15,6 @@ BackSim is a simple fake user management API designed for learning, testing, and
 
 Send a POST request to `/auth/login` with JSON body:
 
-    ```json
     {
         "username": "test",
         "password": "123"
@@ -25,7 +24,6 @@ If successful, you'll get a JSON response with a token (always `"faketoken123"`)
 #### 2. Use the token for all `/users` requests
 All requests to `/users` endpoints require an `Authorization` header:
 
-    ```makefile
     Authorization: Bearer faketoken123
 
 #### 3. Available endpoints:
@@ -63,21 +61,17 @@ Download or clone the frontend files to your local machine.
 
 Make sure you have Python installed (version 3.x). You can check by running:
 
-    ```bash
     python --version
 Open your terminal or command prompt, and navigate to the directory containing your frontend files (e.g., the folder with index.html):
 
-    ```bash
     cd path/to/your/frontend
 
 Start a simple local HTTP server on port `3000` by running:
 
-    ```bash
     python -m http.server 3000
 
 Open your browser and go to:
 
-    ```arduino
     http://localhost:3000
 
 Your frontend interface should load, and it will communicate properly with the backend API hosted on `http://localhost:4000` (or your deployed API URL, e.g. `https://backsim.onrender.com`).
@@ -93,7 +87,6 @@ If you prefer to use other methods or frameworks (like React), make sure your fr
 
 Instead of running the backend locally, you can use the deployed backend at:
 
-    ```arduino
     https://backsim.onrender.com
 
 
