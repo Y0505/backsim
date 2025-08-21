@@ -9,6 +9,13 @@ BackSim is a simple fake user management API designed for learning, testing, and
 - Has a simple authentication system that returns a static token for a fixed username and password.  
 - Simulates random errors sometimes to help you test error handling.  
 
+### Quick Frontend Integration Summary
+- Run backend on port `4000` (or update API URL accordingly, e.g., to your deployed backend at `https://backsim.onrender.com`).
+- Run frontend on port `3000`.
+- First, call `/auth/login` with `{username: "test", password: "123"}` to get token.
+- Include `Authorization: Bearer faketoken123` header on all `/users` requests.
+- Handle possible errors gracefully.
+
 ### How to interact with this API?
 
 #### 1. Login to get a token
