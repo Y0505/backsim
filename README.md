@@ -53,8 +53,6 @@ Include Authorization: Bearer faketoken123 header on all /users requests.
 
 Handle possible simulated errors gracefully.
 
-If you prefer to use other methods or frameworks (like React), make sure your frontend runs on port `3000` to maintain CORS compatibility with the backend.
-
 ### Backend API URL
 
 Instead of running the backend locally, you can use the deployed backend at:
@@ -68,11 +66,11 @@ Just make sure to update your frontend’s API_BASE URL accordingly to point to 
 This project provides a simple frontend interface to interact with the BackSim API. To test and develop the frontend, you need to run it locally on port 3000. This is important because the backend API server (BackSim) is configured to accept requests only from `http://localhost:3000` for security reasons (CORS policy).
 
 #### How to Run the Frontend
-If your frontend project is built with frameworks like React, Vue, or Angular, usually it’s enough to run npm start or yarn start inside the project folder, which by default runs on port 3000.
+If your frontend project is built with frameworks like `React`, `Vue`, or `Angular`, usually it’s enough to run npm start or yarn start inside the project folder, which by default runs on port `3000`.
 
-If your frontend consists of simple HTML/CSS/JS files, you can use any method you prefer to serve the files locally—for example, using Live Server extensions in VSCode or a simple HTTP server (like python -m http.server 3000) running on port 3000.
+If your frontend consists of simple `HTML/CSS/JS` files, you can use any method you prefer to serve the files locally—for example, using Live Server extensions in VSCode or a simple HTTP server (like python -m http.server `3000`) running on port `3000`.
 
-It’s important that the frontend runs on port 3000 to be compatible with the backend’s CORS settings.
+It’s important that the frontend runs on port `3000` to be compatible with the backend’s CORS settings.
 
 Your frontend interface should load, and it will communicate properly with the backend API hosted on `http://localhost:4000` (or your deployed API URL, e.g. `https://backsim.onrender.com`).
 
